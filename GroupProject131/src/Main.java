@@ -8,6 +8,9 @@ public class Main {
 
 		server.registerItem(fancyWatch); // owner registers item
 
+		LoctoServer id = new LoctoServer();
+		
+		id.sendGPSID(fancyWatch); //If owner sends request for location
 	}
 
 }
