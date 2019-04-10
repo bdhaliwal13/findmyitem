@@ -12,5 +12,9 @@ public class Main {
 		
 		id.sendGPSID(fancyWatch); //If owner sends request for location
 	}
+	
+	public static void hello(String[] args) {
+		System.out.println("Itsa me, Wario!");
+	}
 
 }
