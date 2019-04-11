@@ -10,6 +10,10 @@ public class Main {	//brinder
 		LocToServer id = new LocToServer();
 		
 		id.sendGPSID(fancyWatch); //If owner sends request for location
+		
+		FoundItem fi = new FoundItem();
+		
+		System.out.print(fi.ifFound(fancyWatch));
 	}
 	
 	public static void hello(String[] args) {
