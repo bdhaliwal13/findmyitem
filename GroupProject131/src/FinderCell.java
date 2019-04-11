@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class FinderCell {
+public class FinderCell {			//tanner
 	private int tagID;
 	private String gpsLoc;
 	

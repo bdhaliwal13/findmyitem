@@ -1,4 +1,4 @@
-public class LocToServer { //class for 10 min then send location
+public class LocToServer { //class for 10 min then send location		//charlie n casey
 
 	public void sendGPSID(ValuableItem lost) {
 		System.out.println("Find me at this location: ");

@@ -1,4 +1,4 @@
-public class ValuableItem { // class for valuable item
+public class ValuableItem { // class for valuable item		//brinder
 	private int tag;
 	private String ownerDetails;
 	private String gpsLocation;
