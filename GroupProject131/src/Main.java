@@ -16,8 +16,6 @@ public class Main {	//brinder
 		System.out.print(fi.ifFound(fancyWatch));
 	}
 	
-	public static void hello(String[] args) {
-		System.out.println("Itsa me, Wario!");
-	}
+	
 
 }
