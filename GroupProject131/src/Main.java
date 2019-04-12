@@ -11,11 +11,11 @@ public class Main {	//brinder
 		
 		id.sendGPSID(fancyWatch); //If owner sends request for location
 		
-		FoundItem fi = new FoundItem();
-		
-		System.out.print(fi.ifFound(fancyWatch));
+	
+		server.itemLost(fancyWatch);
 	}
 	
-	
+	//should be a menu where you can either register, report your specific item lost. probably use cases...? goodluck 
+
 
 }

@@ -1,4 +1,4 @@
-public class ValuableItem { // class for valuable item		//brinder
+public class ValuableItem { // class for valuable item //brinder
 	private int tag;
 	private String ownerDetails;
 	private String gpsLocation;
@@ -7,6 +7,30 @@ public class ValuableItem { // class for valuable item		//brinder
 		super();
 		this.tag = tag;
 		this.ownerDetails = ownerDetails;
+		this.gpsLocation = gpsLocation;
+	}
+
+	public int getTag() {
+		return tag;
+	}
+
+	public void setTag(int tag) {
+		this.tag = tag;
+	}
+
+	public String getOwnerDetails() {
+		return ownerDetails;
+	}
+
+	public void setOwnerDetails(String ownerDetails) {
+		this.ownerDetails = ownerDetails;
+	}
+
+	public String getGpsLocation() {
+		return gpsLocation;
+	}
+
+	public void setGpsLocation(String gpsLocation) {
 		this.gpsLocation = gpsLocation;
 	}
 
