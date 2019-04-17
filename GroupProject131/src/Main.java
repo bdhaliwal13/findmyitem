@@ -17,9 +17,11 @@ public class Main {	//brinder
 		id.sendGPSID(fancyWatch); //If owner sends request for location
 		
 	
-		server.itemLost(fancyWatch);
+		//server.itemLost(fancyWatch); messes up beamlocation() method
 		menu();
 		System.out.println("done");
+		server.beamLocation(fancyWatch); //just end casey's menu to make our code work 
+										 //i need more time to implement it into his menu - charlie
 	}
 	
 	//should be a menu where you can either register, report your specific item lost. probably use cases...? goodluck 
@@ -51,7 +53,7 @@ public class Main {	//brinder
 					System.out.println("searching...");
 					int lostId = userIn.nextInt();
 					userIn.nextLine();
-				
+					
 					//call finder cell
 					menu();
 				}
