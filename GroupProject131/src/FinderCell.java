@@ -1,4 +1,6 @@
 import java.io.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class FinderCell {			//tanner
 	
@@ -14,6 +16,19 @@ public class FinderCell {			//tanner
 		
 		return 0;
 	}
+	
+	public void findPhone(ValuableItem item) {
+		int minutes = 10;
+		
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			@Override
+			public void run() {
+				System.out.println("The phone with the tag" + item.getTag() + "was found at the location " + item.getGpsLocation());
+			}
+		}, 0, 1000*60*minutes);
+	}	
+		
 
 	
 	
