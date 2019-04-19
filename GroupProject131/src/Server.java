@@ -5,6 +5,7 @@ public class Server { // brinder
 
 	int count; // int count for beamLocation()
 
+<<<<<<< HEAD
 	/*
 	 * public void registerItem(ValuableItem someItem) {
 	 * 
@@ -12,6 +13,12 @@ public class Server { // brinder
 	 * 
 	 * }
 	 */
+=======
+	int[] gpsLoc = new int[25]; 
+	
+	
+	
+>>>>>>> branch 'master' of https://github.com/bdhaliwal13/findmyitem.git
 
 	public ValuableItem itemLost(ValuableItem someItem) {
 
