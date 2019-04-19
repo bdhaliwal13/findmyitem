@@ -33,25 +33,40 @@ public class Main { // brinder
 		// while(userIn.hasNext()) {
 		int i = userIn.nextInt();
 		if (i == 1) {
-			System.out.println("Please enter item Tag ID: ");
-			if (userIn.hasNextInt()) {
-				/* ValuableItem.setTag(userIn.nextInt()); */ System.out.println("getting id");
-				int id = userIn.nextInt();
-			}
-			Server server = new Server();
+			
 			ValuableItem fancyWatch = new ValuableItem("watch", 4444, "Brinder", "1000 J Street", "Mars"); // create
+			Server server = new Server();
 			// item obj
-			server.registerItem(fancyWatch);
+			//server.registerItem(fancyWatch);
 			// fancyWatch.setTag(userIn.nextInt());
 
 			userIn.nextLine(); // advance buffer
-
+			
 			System.out.println("Please enter your full name: ");
 			if (userIn.hasNextLine()) {
-				/* ValuableItem.setTag(userIn.nextLine()); */ System.out.println("getting info");
-				String info = userIn.nextLine();
+				//System.out.println("notating owner");
+				String ownerName = userIn.nextLine();
+				fancyWatch.setOwnerName(ownerName);
 			}
-			// fancyWatch.setOwnerDetails(userIn.nextLine());
+			System.out.println("Please enter your address: ");
+			if (userIn.hasNextLine()) {
+				//System.out.println("notating owner address: ");
+				String address = userIn.nextLine();
+				fancyWatch.setAddress(address);
+			}
+			System.out.println("Please enter a name for the device: ");
+			if (userIn.hasNextLine()) {
+				//System.out.println("getting name");
+				String itemName = userIn.nextLine();
+				fancyWatch.setItemName(itemName);
+			}
+			System.out.println("Please enter item Tag ID: ");
+			if (userIn.hasNextInt()) {
+				//System.out.println("getting id");
+				int id = userIn.nextInt();
+				fancyWatch.setTag(id);
+			}
+			System.out.println("Item successfully registered!");
 			menu();
 
 		}

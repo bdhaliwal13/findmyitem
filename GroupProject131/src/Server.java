@@ -5,11 +5,11 @@ public class Server { // brinder
 
 	int count; // int count for beamLocation()
 
-	public void registerItem(ValuableItem someItem) {
+	/*public void registerItem(ValuableItem someItem) {
 
 		System.out.println("Registering: " + someItem);
 
-	}
+	}*/
 
 	public ValuableItem itemLost(ValuableItem someItem) {
 
