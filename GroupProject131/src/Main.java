@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 import java.io.*;
 import java.time.chrono.JapaneseChronology;
 
@@ -34,7 +35,7 @@ public class Main { // brinder
 		int i = userIn.nextInt();
 		if (i == 1) {
 			
-			ValuableItem fancyWatch = new ValuableItem("watch", 4444, "Brinder", "1000 J Street", "Mars"); // create
+			ValuableItem fancyWatch = new ValuableItem("watch", 4444, "Brinder", "1000 J Street", 69); // create
 			Server server = new Server();
 			// item obj
 			//server.registerItem(fancyWatch);
@@ -66,6 +67,10 @@ public class Main { // brinder
 				int id = userIn.nextInt();
 				fancyWatch.setTag(id);
 			}
+			Random rand = new Random();
+			int gpsLoc = rand.nextInt(26);
+			fancyWatch.setGpsLocation(gpsLoc);
+			
 			System.out.println("Item successfully registered!");
 			menu();
 

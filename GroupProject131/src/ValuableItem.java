@@ -3,9 +3,9 @@ public class ValuableItem { // class for valuable item //brinder
 	private int tag;
 	private String ownerName;
 	private String address;
-	private String gpsLocation;
+	private int gpsLocation;
 
-	public ValuableItem(String itemName, int tag, String ownerName, String address, String gpsLocation) {
+	public ValuableItem(String itemName, int tag, String ownerName, String address, int gpsLocation) {
 		super();
 		this.itemName = itemName;
 		this.tag = tag;
@@ -46,11 +46,11 @@ public class ValuableItem { // class for valuable item //brinder
 		this.address = address;
 	}
 
-	public String getGpsLocation() {
+	public int getGpsLocation() {
 		return gpsLocation;
 	}
 
-	public void setGpsLocation(String gpsLocation) {
+	public void setGpsLocation(int gpsLocation) {
 		this.gpsLocation = gpsLocation;
 	}
 
