@@ -5,17 +5,19 @@ public class Server { // brinder
 
 	int count; // int count for beamLocation()
 
-	/*public void registerItem(ValuableItem someItem) {
-
-		System.out.println("Registering: " + someItem);
-
-	}*/
+	/*
+	 * public void registerItem(ValuableItem someItem) {
+	 * 
+	 * System.out.println("Registering: " + someItem);
+	 * 
+	 * }
+	 */
 
 	public ValuableItem itemLost(ValuableItem someItem) {
 
 		FinderCell finder = new FinderCell();
 
-		finder.getGPSLoc(someItem);
+		finder.getLostTagInfo(someItem);//
 		return someItem;
 
 	}

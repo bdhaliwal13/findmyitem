@@ -25,6 +25,8 @@ public class Main { // brinder
 	// should be a menu where you can either register, report your specific item
 	// lost. probably use cases...? goodluck
 	public static void menu() {
+		ValuableItem fancyWatch = new ValuableItem("watch", 4444, "Brinder", "1000 J Street", "Mars"); // create
+		Server server = new Server();
 		Scanner userIn = new Scanner(System.in);
 		System.out.println("Please Select an option:");
 		System.out.println("[1] Register Device");
@@ -32,48 +34,47 @@ public class Main { // brinder
 		System.out.println("[3] Exit");
 		// while(userIn.hasNext()) {
 		int i = userIn.nextInt();
+
 		if (i == 1) {
-			
-			ValuableItem fancyWatch = new ValuableItem("watch", 4444, "Brinder", "1000 J Street", "Mars"); // create
-			Server server = new Server();
+
 			// item obj
-			//server.registerItem(fancyWatch);
+			// server.registerItem(fancyWatch);
 			// fancyWatch.setTag(userIn.nextInt());
 
 			userIn.nextLine(); // advance buffer
-			
+
 			System.out.println("Please enter your full name: ");
 			if (userIn.hasNextLine()) {
-				//System.out.println("notating owner");
+				// System.out.println("notating owner");
 				String ownerName = userIn.nextLine();
 				fancyWatch.setOwnerName(ownerName);
 			}
 			System.out.println("Please enter your address: ");
 			if (userIn.hasNextLine()) {
-				//System.out.println("notating owner address: ");
+				// System.out.println("notating owner address: ");
 				String address = userIn.nextLine();
 				fancyWatch.setAddress(address);
 			}
 			System.out.println("Please enter a name for the device: ");
 			if (userIn.hasNextLine()) {
-				//System.out.println("getting name");
+				// System.out.println("getting name");
 				String itemName = userIn.nextLine();
 				fancyWatch.setItemName(itemName);
 			}
 			System.out.println("Please enter item Tag ID: ");
 			if (userIn.hasNextInt()) {
-				//System.out.println("getting id");
+				// System.out.println("getting id");
 				int id = userIn.nextInt();
 				fancyWatch.setTag(id);
 			}
-			System.out.println("Item successfully registered!");
+			System.out.println("Registered Item: " + fancyWatch.toString());
 			menu();
 
 		}
 		if (i == 2) {
 			System.out.println("Please enter lost item Tag ID: ");
 			if (userIn.hasNextInt()) {
-				// method to find on server and then call finder cell
+				server.itemLost(fancyWatch);// method to find on server and then call finder cell
 				System.out.println("searching...");
 				int lostId = userIn.nextInt();
 				userIn.nextLine();

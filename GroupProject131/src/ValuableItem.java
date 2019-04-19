@@ -56,8 +56,8 @@ public class ValuableItem { // class for valuable item //brinder
 
 	@Override
 	public String toString() {
-		return "ValuableItem [itemName=" + itemName + ", tag=" + tag + ", ownerName=" + ownerName + ", address="
-				+ address + ", gpsLocation=" + gpsLocation + "]";
+		return itemName + ", with Tag: " + tag + ", Owner: " + ownerName + ", Address:"
+				+ address + ", and GPSLocation: " + gpsLocation;
 	}
 	
 	
