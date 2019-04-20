@@ -3,9 +3,13 @@ public class ValuableItem { // class for valuable item //brinder
 	private int tag;
 	private String ownerName;
 	private String address;
-	private int gpsLocation;
+	private String gpsLocation;
 
-	public ValuableItem(String itemName, int tag, String ownerName, String address, int gpsLocation) {
+	public ValuableItem() {
+
+	}
+
+	public ValuableItem(String itemName, int tag, String ownerName, String address, String gpsLocation) {
 		super();
 		this.itemName = itemName;
 		this.tag = tag;
@@ -46,20 +50,18 @@ public class ValuableItem { // class for valuable item //brinder
 		this.address = address;
 	}
 
-	public int getGpsLocation() {
+	public String getGpsLocation() {
 		return gpsLocation;
 	}
 
-	public void setGpsLocation(int gpsLocation) {
-		this.gpsLocation = gpsLocation;
+	public void setGpsLocation(String locations) {
+		this.gpsLocation = locations;
 	}
 
 	@Override
 	public String toString() {
-		return itemName + ", with Tag: " + tag + ", Owner: " + ownerName + ", Address:"
-				+ address + ", and GPSLocation: " + gpsLocation;
+		return itemName + ", with Tag: " + tag + ", Owner: " + ownerName + ", Address: " + address + " GPS Location: home"
+			;
 	}
-	
-	
 
 }
