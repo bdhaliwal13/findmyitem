@@ -1,4 +1,5 @@
 public class ValuableItem { // class for valuable item //brinder
+
 	private String itemName;
 	private int tag;
 	private String ownerName;
@@ -60,8 +61,8 @@ public class ValuableItem { // class for valuable item //brinder
 
 	@Override
 	public String toString() {
-		return itemName + ", with Tag: " + tag + ", Owner: " + ownerName + ", Address: " + address + " GPS Location: home"
-			;
+		return itemName + ", with Tag: " + tag + ", Owner: " + ownerName + ", Address: " + address
+				+ " GPS Location: home";
 	}
 
 }

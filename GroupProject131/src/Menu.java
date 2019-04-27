@@ -13,7 +13,8 @@ public class Menu {
 		System.out.println("[3] Exit");
 		// while(userIn.hasNext()) {
 		int i = userIn.nextInt();
-		ValuableItem myItem = new ValuableItem(); // create
+		//DESIGN PATTERN STUFF
+		ValuableItem myItem = new ValuableItemBuilder().setItemName("watch").setTag(1).setOwnerName("joe").setAddress("1000 j street").setGpsLocation("home").getValuableItem(); // create
 		if (i == 1) {
 	
 			userIn.nextLine(); // advance buffer

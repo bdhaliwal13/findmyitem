@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Timer; // Using Timer Class
 import java.util.TimerTask; // Using TimerTask Class
 
-public class Server { // brinder
+public class Server {
 
 
 	
