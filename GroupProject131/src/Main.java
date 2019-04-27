@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Menu.menu();
 		//seed data for demo:joe, 1000 j street, watch,1,home
-		//or just press 2 LOL
+		//or just press 2  LOL
 		//demo:
 		// if item reports their item is lost:
 		//1. User presses option two which invokes a method in the server where the arguement passed in to that method is the tagid that the user enters
