@@ -1,7 +1,8 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Menu {
-	public static void menu() {
+	public static void menu() throws Exception {
 		
 		
 		Server server = new Server();

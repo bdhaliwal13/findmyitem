@@ -5,7 +5,7 @@ import java.util.TimerTask;
 
 public class FinderCell {
 
-	public void findAndBroadcastTag(ValuableItem someItem, int userTag) { // this will send location of lost item every
+	public void findAndBroadcastTag(ValuableItem someItem, int userTag) throws Exception{ // this will send location of lost item every
 																			// 10 mins TO THE
 
 		if (userTag == someItem.getTag()) {
@@ -29,7 +29,12 @@ public class FinderCell {
 						// myTask.cancel();
 						System.out.println("Location was repeated for 7 times, request location again.");
 						timer.cancel(); // Cancels task
-						Menu.menu();
+						try {
+							Menu.menu();
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 
 					}
 

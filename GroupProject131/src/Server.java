@@ -7,7 +7,7 @@ public class Server {
 
 	
 
-	public ValuableItem itemLost(ValuableItem someItem, int someTag) {
+	public ValuableItem itemLost(ValuableItem someItem, int someTag) throws Exception {
 		
 		
 		System.out.println("server is searching for your lost item...");
