@@ -14,11 +14,12 @@ public class FinderCell {
 				int count = 0;
 
 				@Override
-				public void run() {
+				public void run() {		
 					count++;
 					final String[] locations = {"Vacaville", "Chicago", "Marine World", "Chucky Cheese", "Ukraine", "Mumbai","Jupiter","Hong Kong", "Your Mother's House", "Cameroon", "Karachi", "Kuala Lumpur"};
 					Random random = new Random();
 					int index = random.nextInt(locations.length);
+					
 					for (int i = 0; i < index; i++) {
 						someItem.setGpsLocation(locations[index]);
 					}
