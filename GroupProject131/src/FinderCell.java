@@ -42,7 +42,7 @@ public class FinderCell {
 				}
 
 			};
-			timer.schedule(myTask, 0, 3000); // Executes task every 3000 milliseconds, 3 seconds (10 min in prod)
+			timer.schedule(myTask, 0, 2000); // Executes task every 3000 milliseconds, 3 seconds (10 min in prod)
 
 		} else {
 			System.out.println("No registered item with tag:" + userTag + " was found :(. Please try again.");

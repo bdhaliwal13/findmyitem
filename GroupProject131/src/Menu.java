@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Menu {
 	public static void menu() throws Exception {
-		
 		Server server = new Server();
 		Scanner userIn = new Scanner(System.in);
 		System.out.println(" ");
